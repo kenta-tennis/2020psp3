@@ -77,8 +77,10 @@ Node* InsertNewNode(City newCity, Node* pNext)
 {
     Node*pNode = malloc(sizeof(Node));
     Node*top = NULL;
+
     pNode->city = newCity;
     pNode->pNext = pNext;
+    
     top = pNode;
     return (top);
 
