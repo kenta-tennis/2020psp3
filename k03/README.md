@@ -49,24 +49,10 @@
 ## 出力結果
 
 ```
-bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/Desktop/2020psp3/k03 (develop)
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/デスクトップ/2020psp3/k03
 $ ./k03
-Force Search. Find keyword at:wind
-On a dark deseart highway, cool wind in my hair.
-wind
-text= , key=w
-key_index=7, index=3, a=0
-On a dark deseart highway, cool wind in my hair.
-    wind
-text=a, key=w
-key_index=11, index=7, a=0
-On a dark deseart highway, cool wind in my hair.
-        wind
-text=d, key=w
-text=d, key=i
-text=d, key=n
-text=d, key=d
-BM Search. Find keyword at:k deseart highway, cool wind in my hair.
+Force Search. Find keyword at:wind in my hair.
+BM Search. Find keyword at:wind in my hair.
 ```
 
 ## 修正履歴

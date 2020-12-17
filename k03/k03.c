@@ -27,7 +27,7 @@ char* ForceSearch(char text[], char key[])
 
             if(pos == key_len - 1)
             {
-                return key;
+                return text+start;
             }            
         }
     }
@@ -38,7 +38,7 @@ char* ForceSearch(char text[], char key[])
 char* BMSearch(char text[], char key[])
 {
     int index,key_index;
-    int text_len,key_len;
+    int text_len=0,key_len=0;
     int table[256];
     int a,b;
 
@@ -52,7 +52,7 @@ char* BMSearch(char text[], char key[])
         key_len++;
     }
 
-    for(a=0;a<255;a++)
+    for(a=0;a<=255;a++)
     {
         table[a] = key_len;
     }
@@ -66,18 +66,11 @@ char* BMSearch(char text[], char key[])
 
     while(index<=text_len-1)
     {
-        printf("%s\n", text);
-        for(int k=0; k<index-key_len+1; k++)
-        {
-            printf(" ");
-        }
-        printf("%s\n", key);
 
         for(a=0;a<=key_len-1;a++)
         {
-            printf("text=%c, key=%c\n", text[index-1], key[a]);
 
-            if(text[index-1] == key[key_len-1])
+            if(text[index-a] == key[key_len-a-1])
             {
                 if(a==key_len-1)
                 {
@@ -96,8 +89,7 @@ char* BMSearch(char text[], char key[])
             
         }
 
-        key_index = index-a+table[text[index-1]];
-        printf("key_index=%d, index=%d, a=%d\n", key_index, index, a);
+        key_index = index-a+table[text[index-a]];
 
         if(key_index>index)
         {
