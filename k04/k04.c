@@ -150,6 +150,7 @@ void QuickSort(City arrayCity[], int left, int right)
         QuickSort(arrayCity, left, b-1);
         QuickSort(arrayCity, b+1, right);
     }
+    
 }
 
 void HeapSort(City arrayCity[], int size)
