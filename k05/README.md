@@ -1,5 +1,5 @@
 # 課題5 レポート
-学生番号　氏名
+35319024　篠隈健太
 
 
 ## 課題
@@ -98,12 +98,48 @@ int AdjacencyMatrix[MAX_STATIONS][MAX_STATIONS] = {
 
 ## ソースコードの説明
 
+116: Stackを初期化する
 
+117: 出発点をPushする
+
+216: Queueを初期化する
+
+217: 出発点をPushする
 
 ## 出力結果
 
 ```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/ドキュメント/2020psp3/k05 (develop)
+$ gcc -W -Wall k05.c -o k05
+k05.c: In function 'BreadthFirstSearch':
+k05.c:221:17: warning: implicit declaration of function 'DeQeue'; did you mean 'DeQueue'? [-Wimplicit-function-declaration]
+  221 |         index = DeQeue();
+      |                 ^~~~~~
+      |                 DeQueue
+k05.c:241:13: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  241 |             print("(BreadthFirst)%s is visited\n", ArrayStation[a].kanji);
+      |             ^~~~~
+      |             printf
+k05.c: In function 'SearchGraphByDijkstra':
+k05.c:249:31: warning: unused parameter 'start' [-Wunused-parameter]
+  249 | int SearchGraphByDijkstra(int start, int goal, int size, int matrix[size][size])
+      |                           ~~~~^~~~~
+k05.c:249:42: warning: unused parameter 'goal' [-Wunused-parameter]
+  249 | int SearchGraphByDijkstra(int start, int goal, int size, int matrix[size][size])
+      |                                      ~~~~^~~~
+k05.c:249:62: warning: unused parameter 'matrix' [-Wunused-parameter]
+  249 | int SearchGraphByDijkstra(int start, int goal, int size, int matrix[size][size])
+      |                                                          ~~~~^~~~~~~~~~~~~~~~~~
+k05.c:253:1: warning: control reaches end of non-void function [-Wreturn-type]
+  253 | }
+      | ^
+C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\BB3531~1\AppData\Local\Temp\ccpGkmLJ.o:k05.c:(.text+0x53f): undefined reference to `DeQeue'
+C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\BB3531~1\AppData\Local\Temp\ccpGkmLJ.o:k05.c:(.text+0x602): undefined reference to `print5.c:(.text+0x602): undefined reference to `print'
+collect2.exe: error: ld returned 1 exit status
 
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/ドキュメント/2020psp3/k05 (develop)
+$ ./k05
+bash: ./k05: No such file or directory
 ```
 
 ## 修正履歴
