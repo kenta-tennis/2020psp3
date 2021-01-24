@@ -1,5 +1,5 @@
 # 課題5 レポート
-学生番号　氏名
+35319024　篠隈健太
 
 
 ## 課題
@@ -98,12 +98,36 @@ int AdjacencyMatrix[MAX_STATIONS][MAX_STATIONS] = {
 
 ## ソースコードの説明
 
+116: Stackを初期化する
 
+117: 出発点をPushする
+
+216: Queueを初期化する
+
+217: 出発点をPushする
 
 ## 出力結果
 
 ```
-
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/ドキュメント/2020psp3/k05 (develop)
+$ ./k05
+(DepthFirst)赤迫 is visited
+(DepthFirst)長崎大学前 is visited
+(DepthFirst)長崎駅前 is visited
+(DepthFirst)新地中華街 is visited
+(DepthFirst)石橋 is visited
+(DepthFirst)崇福寺 is visited
+(DepthFirst)市民会館 is visited
+(DepthFirst)蛍茶屋 is visited
+(BreadthFirst)赤迫 is visited
+(BreadthFirst)長崎大学前 is visited
+(BreadthFirst)長崎駅前 is visited
+(BreadthFirst)新地中華街 is visited
+(BreadthFirst)石橋 is visited
+(BreadthFirst)崇福寺 is visited
+(BreadthFirst)市民会館 is visited
+(BreadthFirst)蛍茶屋 is visited
+Time Required: 8
 ```
 
 ## 修正履歴
