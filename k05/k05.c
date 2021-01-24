@@ -218,7 +218,7 @@ void BreadthFirstSearch(int size, int matrix[size][size], int start)
 
     while(QueueIsEmpty() == FALSE)
     {
-        index = DeQeue();
+        index = DeQueue();
 
         if(visited[index] == UNVISITED)
         {
@@ -238,7 +238,7 @@ void BreadthFirstSearch(int size, int matrix[size][size], int start)
     {
         if(visited[a] == VISITED)
         {
-            print("(BreadthFirst)%s is visited\n", ArrayStation[a].kanji);
+            printf("(BreadthFirst)%s is visited\n", ArrayStation[a].kanji);
         }
     }
 }
