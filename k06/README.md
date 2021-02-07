@@ -1,5 +1,5 @@
 # 課題6 レポート
-学生番号　氏名
+35319024 篠隈健太
 
 
 ## 課題
@@ -67,12 +67,22 @@ typedef struct tagMenu{
 
 ## ソースコードの説明
 
+80: 表を初期化する
 
+92~102: 商品を入れ替えた場合とそのままの場合の値を比べ、そのままの場合の方が大きい場合はそのままの値にし、入れ替えた場合の方が大きい場合は入れ替えた場合の値にする。
 
 ## 出力結果
 
 ```
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/ドキュメント/2020psp3/k06 (develop)
+$ gcc -W -Wall k06.c -o k06
+k06.c: In function 'DynamicProgLimited':
+k06.c:72:9: warning: variable 'history' set but not used [-Wunused-but-set-variable]
+   72 |     int history[items+1][nap_size + 1];     //  履歴         ^~~~~~~
 
+bb35319024@DESKTOP-N8LSJ1E MINGW64 ~/OneDrive/ドキュメント/2020psp3/k06 (develop)
+$ ./k06
+最大取得可能カロリー = 1796
 ```
 
 ## 修正履歴
